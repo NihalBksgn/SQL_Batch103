@@ -195,11 +195,21 @@ INSERT INTO ogrenciler2 VALUES(127, 'Mustafa Bak', 'Ali', 99);
 
 
 -- ismi Nesibe Yilmaz veya Mustafa Bak olan kayıtları silelim
-delete from ogrenciler2 where isim='Nesibe Yilamz' or isim='Mustafa Bak';
+DELETE FROM ogrenciler2
+where isim = 'Nesibe Yilmaz' or isim='Mustafa Bak';
 
+select * from ogrenciler2;
 
+--İsmi Ali Can ve id'si 123 olan kaydı siliniz.
+delete from ogrenciler2 where isim = 'Ali Can' and id = 123;
 
+--id 'si 126'dan büyük olan kayıtları silelim.
+delete from ogrenciler2 where id>126; 
 
+--id'si 123, 125 veya 126 olanları silelim.
+delete from ogrenciler2 where id=123;
+delete from ogrenciler2 where id=125;
+delete from ogrenciler2 where id=126;
 
 
 
